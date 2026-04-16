@@ -948,9 +948,6 @@ def _render_machine_orders_input_chart(machine_orders_df: pd.DataFrame) -> None:
     view_df["allowed_line_count"] = line_counts
 
     st.markdown("**Processing Time by Order**")
-    st.caption(
-        "Input data view. Orders are sorted by longer processing time so larger jobs are easier to explain."
-    )
 
     kpi_cols = st.columns(4)
     kpi_cols[0].metric("Total Orders", int(len(view_df)))
@@ -3074,7 +3071,7 @@ st.markdown(f'<div class="stepper-row" style="margin:0.15rem 0 1rem 0;">{step_ht
 if current_step == "1. Choose Data":
     _render_section_header(
         "Choose a Demo Scenario",
-        "Start with one of the prepared example datasets so you can walk stakeholders through a realistic planning case.",
+        "Start with one of the prepared example datasets.",
         eyebrow="Step 1",
     )
     if scenario is None:
@@ -3099,7 +3096,6 @@ if current_step == "1. Choose Data":
 elif current_step == "2. Review Inputs":
     _render_section_header(
         "Review Input Data",
-        "Explain the planning inputs in business language before you run the scenario. Each section includes a visual view and a supporting table.",
         eyebrow="Step 2",
     )
     if scenario is None:
@@ -3115,7 +3111,7 @@ elif current_step == "2. Review Inputs":
             ],
             columns=5,
         )
-        st.markdown('<div class="compact-note">Each input section is presented for live explanation first, while preserving the underlying technical detail for review.</div>', unsafe_allow_html=True)
+
         _render_input_workspace(scenario)
 
 elif current_step == "3. Run Planning":

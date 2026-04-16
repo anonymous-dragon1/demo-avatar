@@ -1391,17 +1391,17 @@ def _render_requirements_input_chart(requirements_df: pd.DataFrame) -> None:
                 return "background-color: #BFDBFE; color: #0F172A; font-weight: 700;"
             return "background-color: #DBEAFE; color: #0F172A; font-weight: 700;"
 
-        styled_matrix = (
-            matrix_df.style
-            .format("{:.0f}")
-            .applymap(_cell_style)
-            .set_properties(**{"text-align": "center"})
-            .set_table_styles(
-                [
-                    {"selector": "th", "props": [("background-color", "#EFF6FF"), ("color", "#0F172A"), ("font-weight", "700")]},
-                    {"selector": "td", "props": [("min-width", "78px"), ("border", "1px solid #CBD5E1")]},
-                ]
-            )
+        styler = matrix_df.style.format("{:.0f}")
+        if hasattr(styler, "map"):
+            styler = styler.map(_cell_style)
+        else:
+            styler = styler.applymap(_cell_style)
+
+        styled_matrix = styler.set_properties(**{"text-align": "center"}).set_table_styles(
+            [
+                {"selector": "th", "props": [("background-color", "#EFF6FF"), ("color", "#0F172A"), ("font-weight", "700")]},
+                {"selector": "td", "props": [("min-width", "78px"), ("border", "1px solid #CBD5E1")]},
+            ]
         )
         st.dataframe(styled_matrix, use_container_width=True)
         st.markdown(

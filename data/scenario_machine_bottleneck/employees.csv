@@ -1,0 +1,9 @@
+employee_id,employee_name,skills_json,shift_cost,available_days_json,can_work_long_shift,team
+E01,Alice,"{""PACKING"": 95}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,A
+E02,Budi,"{""PACKING"": 90}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,A
+E03,Cici,"{""PACKING"": 84, ""MIXING"": 78}",11,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,B
+E04,Deni,"{""MIXING"": 95}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,B
+E05,Eka,"{""MIXING"": 90}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,B
+E06,Farah,"{""PACKING"": 80, ""MIXING"": 92}",12,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,C
+E07,Gita,"{""PACKING"": 87}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,C
+E08,Hadi,"{""MIXING"": 85}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,D

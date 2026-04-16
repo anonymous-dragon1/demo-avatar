@@ -1,0 +1,11 @@
+shift_id,day,shift_name,start_min,end_min
+Mon_S1,Mon,Mon Shift 1,360,840
+Mon_S2,Mon,Mon Shift 2,840,1320
+Tue_S1,Tue,Tue Shift 1,1800,2280
+Tue_S2,Tue,Tue Shift 2,2280,2760
+Wed_S1,Wed,Wed Shift 1,3240,3720
+Wed_S2,Wed,Wed Shift 2,3720,4200
+Thu_S1,Thu,Thu Shift 1,4680,5160
+Thu_S2,Thu,Thu Shift 2,5160,5640
+Fri_S1,Fri,Fri Shift 1,6120,6600
+Fri_S2,Fri,Fri Shift 2,6600,7080

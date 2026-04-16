@@ -1,0 +1,7 @@
+{
+  "scenario_id": "scenario_manpower_shortage",
+  "title": "Manpower Shortage Scenario",
+  "description": "Machine capacity is sufficient, but the employee pool and availability are intentionally a bit too small to cover all required staffing across the active shifts.",
+  "expected_behavior": "Machine scheduling should be feasible while manpower assignment should show a moderate shortage across several active line-shift demand buckets.",
+  "difficulty": "medium"
+}

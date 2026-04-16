@@ -1,0 +1,6 @@
+employee_id,employee_name,skills_json,shift_cost,available_days_json,can_work_long_shift,team
+E01,Alice,"{""PACKING"": 95}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,A
+E02,Budi,"{""PACKING"": 88}",10,"[""Mon"", ""Tue"", ""Wed""]",False,A
+E03,Deni,"{""MIXING"": 94}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,B
+E04,Eka,"{""MIXING"": 86}",10,"[""Mon"", ""Tue"", ""Wed""]",False,B
+E05,Fajar,"{""MIXING"": 82}",10,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri""]",False,C

@@ -1,0 +1,7 @@
+{
+  "scenario_id": "scenario_balanced",
+  "title": "Balanced Feasible Scenario",
+  "description": "Eight BOs are spread across both production lines and multiple shifts while the employee pool is large enough to cover all active line-shift requirements.",
+  "expected_behavior": "Machine scheduling should fit all BOs, generate demand across several shifts, and manpower should cover all active line-shift demand without shortage.",
+  "difficulty": "easy"
+}

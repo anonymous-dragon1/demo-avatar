@@ -1,0 +1,7 @@
+{
+  "scenario_id": "scenario_machine_bottleneck",
+  "title": "Machine Bottleneck Scenario",
+  "description": "The order set materially exceeds total available line capacity, so multiple orders should remain unscheduled even though manpower remains sufficient for the work that does get scheduled.",
+  "expected_behavior": "Machine scheduling should leave several orders unscheduled while manpower still covers the scheduled shifts without shortage.",
+  "difficulty": "medium"
+}

@@ -1,0 +1,9 @@
+bo_id,product_code,duration_min,eligible_lines_json,priority,setup_time_min,setup_cost,line_preference_penalty_json,demand_qty,customer_name
+BO01,P1,780,"[""LINE_A""]",1,25,6,"{""LINE_A"": 0}",140,Cust A
+BO02,P2,720,"[""LINE_A"", ""LINE_B""]",2,25,6,"{""LINE_A"": 0, ""LINE_B"": 6}",125,Cust B
+BO03,P3,660,"[""LINE_B""]",3,25,6,"{""LINE_B"": 0}",120,Cust C
+BO04,P1,600,"[""LINE_A"", ""LINE_B""]",4,25,6,"{""LINE_A"": 2, ""LINE_B"": 0}",110,Cust D
+BO05,P2,540,"[""LINE_B""]",5,20,5,"{""LINE_B"": 0}",95,Cust E
+BO06,P3,480,"[""LINE_A"", ""LINE_B""]",6,20,5,"{""LINE_A"": 5, ""LINE_B"": 0}",90,Cust F
+BO07,P1,420,"[""LINE_A""]",7,20,5,"{""LINE_A"": 0}",80,Cust G
+BO08,P2,360,"[""LINE_B"", ""LINE_A""]",8,20,5,"{""LINE_A"": 7, ""LINE_B"": 0}",75,Cust H
